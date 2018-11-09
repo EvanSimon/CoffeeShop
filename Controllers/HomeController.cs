@@ -55,7 +55,10 @@ namespace CoffeeShopApp.Controllers
             }
         }
     
-
+        public ActionResult Confirm(UserInfo NewName)
+        {
+            return View();
+        }
 
 
     }

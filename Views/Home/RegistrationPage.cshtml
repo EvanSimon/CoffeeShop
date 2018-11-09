@@ -5,14 +5,22 @@
 
 <h2>RegistrationPage</h2>
 
-<form action="/Home/Welcome" method="post">
-    <label class="control-label" First Name></label> <input type="text" name="FirstName" class="form-control" placeholder="John" />
-    <label class="control-label" Last Name></label> <input type="text" name="LastName" class="form-control" placeholder="Adams" />
-    <label class="control-label" Email></label> <input type="email" name="Email" class="form-control" placeholder="JohnAdams@gmail.com" />
-    <label class="control-label" Password></label> <input type="password" name="Password" class="form-control" placeholder="!Hsdhslkjdf289" />
-    <label class="control-label" Phone Number></label> <input type="Number" name="PhoneNumber" class="form-control"  placeholder="555-555-5555"/>
+<form action="/Home/Welcome" onsubmit="testInputs()" method="post">
+    <label class="control-label">First Name</label> <input id="FirstName" type="text" name="FirstName" class="form-control" placeholder="John" />
+    <label class="control-label">Last Name</label> <input id="LastName" type="text" name="LastName" class="form-control" placeholder="Adams" />
+    <label class="control-label">Email</label> <input id="Email" type="email" name="Email" class="form-control" placeholder="JohnAdams@gmail.com" />
+    <label class="control-label">Password</label> <input id="Password" type="password" name="Password" class="form-control" placeholder="!Hsdhslkjdf289" />
+    <label class="control-label">Phone Number</label> <input id="PhoneNumber" type="Number" name="PhoneNumber" class="form-control" placeholder="555-555-5555" />
+    <label class="control-label">Birthday</label> <input id="Birthday" type="text" name="Birthday" class="form-control" placeholder="Year/Months/Day" />
+    <label>Gender:<input type="radio" name="gender" />Male</label><label><input type="radio" name="gender" />Female</label><label><input type="radio" name="gender" />Other</label><br />
+    <select id="dropdowntipo" name="EmploymentType">
+        <option value="FullTime">Full Time</option>
+        <option value="PartTime">Part Time</option>
+        <option value="Contract">Contract</option>
+    </select>
+    <br />
     <input type="submit" value="Sign Up!" class="btn-default" />
 
 </form>
 
-<script src="../../Scripts/validationForm.js"></script>
+<script src="~/Scripts/validationForm.js"></script>
